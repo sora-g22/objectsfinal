@@ -1,0 +1,3 @@
+mypy
+pytest
+argon2-cffi
