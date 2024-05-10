@@ -1,3 +1,5 @@
+pillow
 mypy
 pytest
 argon2-cffi
+mysql-connector-python

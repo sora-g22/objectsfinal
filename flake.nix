@@ -19,7 +19,9 @@ outputs = { self, nixpkgs}:
         packages = [
           (pkgs.python311Full.withPackages (python-pkgs: [
 	  	          python-pkgs.tkinter
+                python-pkgs.pillow
 		            python-pkgs.argon2-cffi
+                python-pkgs.mysql-connector
               ]
             )
           )
