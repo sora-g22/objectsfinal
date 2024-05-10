@@ -314,7 +314,7 @@ class AdminCoursesMenu(tk.Frame):
         self.setonHallBranding.create_image(175,150/2, image=self.setonHallLogo)
         self.setonHallBranding.pack(side=tk.TOP)
         self.setonHallFont = tkFont.Font(family="TisaPro", size=12, weight=tkFont.NORMAL)
-        self.setonHallSignInFont = tkFont.Font(family="TisaPro", size=24, weight=tkFont.NORMAL) 
+        self.setonHallSignInFont = tkFont.Font(family="TisaPro", size=24, weight=tkFont.NORMAL)
 
 class AdminUsersMenu(tk.Frame):
     def __init__(self, master):

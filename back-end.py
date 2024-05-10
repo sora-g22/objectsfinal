@@ -67,7 +67,7 @@ class Server:
                     elif data[1] == "professor":
                         cursor.execute(f"INSERT INTO professors (UUID, firstName, lastName, contactInfo) VALUES ('{newUUID}', '{data[4]}', '{data[5]}', ' ')")
                         cursor.execute(f"INSERT INTO roles (roleID, users_UUID) VALUES ('professor', '{newUUID}')")
-                    elif data[2] == "admins":
+                    elif data[1] == "admin":
                         cursor.execute(f"INSERT INTO admins (users_UUID, firstName, lastName) VALUES ('{newUUID}', '{data[4]}', '{data[5]}')")
                         cursor.execute(f"INSERT INTO roles (roleID, users_UUID) VALUES ('admin', '{newUUID}')")
                     self.connection.commit()
